@@ -1,3 +1,168 @@
-body {
-  background-color: pink;
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Quicksand:wght@500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html body {
+  background-attachment: fixed;
+  background-color: #fff;
+  background-image: url("../images/fondo.jpg");
+  background-repeat: repeat;
+  background-size: 100vw auto;
+  padding-bottom: 5rem;
+}
+@media (min-width: 992px) {
+  html body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 100vh;
+  }
+}
+html body main {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+html body main section {
+  padding: 3rem 1rem;
+}
+html body main section.introduccion {
+  text-align: center;
+}
+html body main section article {
+  margin-top: 2rem;
+}
+html body main h1, html body main h2, html body main h3, html body main h4 {
+  color: #000;
+  font-family: "Amatic SC", sans-serif;
+  padding: 1rem 0.5rem;
+}
+@media (max-width: 991px) {
+  html body main h1, html body main h2, html body main h3, html body main h4 {
+    text-align: center;
+  }
+}
+html body main h1 {
+  font-size: 6rem;
+}
+html body main h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+html body main h3 {
+  font-size: 2.5rem;
+}
+@media (min-width: 992px) {
+  html body main h3 {
+    font-size: 3rem;
+  }
+}
+html body main h4 {
+  font-size: 2.5rem;
+}
+html body main p {
+  margin: 0 auto;
+  padding: 1.2rem 0.75rem;
+}
+@media (max-width: 991px) {
+  html body main p {
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  html body main p {
+    padding: 0.75rem 1.5rem;
+    text-indent: 3rem;
+  }
+}
+html body main img {
+  border: 8px solid #000;
+  display: flex;
+  height: auto;
+  max-width: 100%;
+  margin: 2rem auto 4rem auto;
+}
+@media (min-width: 992px) {
+  html body main img {
+    max-width: 700px;
+  }
+  html body main img.vertical {
+    max-width: 440px;
+  }
+}
+html body main video {
+  display: flex;
+  max-width: 100%;
+  margin: 2rem auto 4rem auto;
+}
+@media (min-width: 992px) {
+  html body main video {
+    max-width: 900px;
+  }
+}
+@media (min-width: 992px) {
+  html body main .image-block {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  html body main .image-block img {
+    max-height: 400px;
+    max-width: 200px;
+  }
+}
+html body main ul {
+  padding: 0 1.5rem;
+}
+@media (min-width: 992px) {
+  html body main ul {
+    padding: 0 3rem;
+  }
+}
+html body main ul li {
+  padding: 0.5rem 0;
+}
+html body main ul li b {
+  text-decoration: underline;
+}
+@media (max-width: 991px) {
+  html body main ul li ul {
+    padding: 0 1rem;
+  }
+}
+html body main p, html body main li {
+  color: #000;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+}
+html body main p span.highlighted, html body main li span.highlighted {
+  background-color: #000;
+  color: #fff;
+  padding: 0 0.5rem;
+}
+html body main figure {
+  padding: 2rem 0;
+  text-align: center;
+}
+html body main figure img {
+  margin: 0 auto;
+}
+@media (min-width: 992px) {
+  html body main figure img {
+    margin: 2rem auto 0 auto;
+  }
+}
+html body main figure figcaption {
+  color: #000;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+  word-wrap: break-word;
 }
