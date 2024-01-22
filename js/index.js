@@ -90,5 +90,6 @@ document.addEventListener('DOMContentLoaded', function () {
       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
   }
+  */
 });
-*/
+
