@@ -24,9 +24,46 @@ html {
 
         &.blocked-scroll { overflow: hidden; }
 
+        nav {
+            background-color: rgb(92, 10, 157);
+            border-radius: 20px;
+            display: flex;
+            margin: 0 auto;
+            padding: 0.5rem;
+            position: fixed;
+            top: 10px;
+            left: 0;
+            right: 0;
+            width: fit-content;
+
+            @media ( max-width: 991px ) { display: none; }
+
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                list-style: none;
+
+                li {
+                    padding: 0 0.5rem;
+
+                    a {
+                        color: #fff;
+                        font-family: 'Quicksand', sans-serif;
+                        text-decoration: none;
+
+                        &:hover { text-decoration: underline; }
+
+                        &.underlined { text-decoration: underline; }
+                    }
+                }
+            }
+        }
+
         main {
             margin: 0 auto;
             max-width: 1200px;
+            padding: 40px 0 0 0;
 
             section {
                 padding: 3rem 1rem;

@@ -23,9 +23,48 @@ html body {
 html body.blocked-scroll {
   overflow: hidden;
 }
+html body nav {
+  background-color: rgb(92, 10, 157);
+  border-radius: 20px;
+  display: flex;
+  margin: 0 auto;
+  padding: 0.5rem;
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 991px) {
+  html body nav {
+    display: none;
+  }
+}
+html body nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+html body nav ul li {
+  padding: 0 0.5rem;
+}
+html body nav ul li a {
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+}
+html body nav ul li a:hover {
+  text-decoration: underline;
+}
+html body nav ul li a.underlined {
+  text-decoration: underline;
+}
 html body main {
   margin: 0 auto;
   max-width: 1200px;
+  padding: 40px 0 0 0;
 }
 html body main section {
   padding: 3rem 1rem;
