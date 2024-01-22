@@ -20,6 +20,7 @@ function scrollToTop() {
 
 
 
+// DOMContentLoaded eventListener
 document.addEventListener('DOMContentLoaded', function () {
 
     // Images popup
