@@ -1,26 +1,26 @@
 
+// Get the button element
+const backToTopBtn = document.getElementById("back-to-top-button");
+
+
+// Show or hide the button based on scroll position
+window.onscroll = function() {
+    if ( document.documentElement.scrollTop > 800 ) {
+        backToTopBtn.style.display = "flex";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+}
+
+
+// Scroll to the top when the button is clicked
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
-
-    // Get the button element
-    const backToTopBtn = document.getElementById("back-to-top-button");
-
-
-    // Show or hide the button based on scroll position
-    window.onscroll = function() {
-        if ( document.documentElement.scrollTop > 800 ) {
-            backToTopBtn.style.display = "flex";
-        } else {
-            backToTopBtn.style.display = "none";
-        }
-    }
-
-
-    // Scroll to the top when the button is clicked
-    function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-
 
     // Images popup
     const popupContainer = document.getElementById('popup');
