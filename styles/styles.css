@@ -27,16 +27,37 @@ html body nav {
   border-radius: 20px;
   display: flex;
   margin: 0 auto;
-  padding: 3rem 0.2rem;
+  padding: 1.3rem 0.2rem;
   position: fixed;
   top: 10px;
   left: 0;
   right: 0;
   width: 95%;
+  z-index: 1;
+}
+html body nav:focus {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-focus-ring-color: transparent;
+  -moz-focus-inner: none;
 }
 @media (max-width: 991px) {
-  html body nav {
+  html body nav .hamburger-menu {
+    display: flex;
+  }
+  html body nav ul {
+    align-items: flex-start;
+    background-color: rgb(92, 10, 157);
+    border-radius: 20px;
     display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 100%;
+  }
+  html body nav ul.show {
+    display: flex;
   }
 }
 @media (min-width: 992px) {
@@ -46,8 +67,34 @@ html body nav {
     width: fit-content;
   }
 }
+html body nav .hamburger-menu {
+  align-items: center;
+  background: none;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  outline: none;
+  padding: 9px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+html body nav .hamburger-menu:focus {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-focus-ring-color: transparent;
+  -moz-focus-inner: none;
+}
+html body nav .hamburger-menu .bar {
+  background-color: #fff;
+  height: 2px;
+  margin: 3px 0;
+  transition: 0.4s;
+  width: 25px;
+}
 html body nav ul {
-  display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -56,11 +103,17 @@ html body nav ul {
 }
 @media (min-width: 992px) {
   html body nav ul {
+    display: flex;
     flex-direction: row;
   }
 }
 html body nav ul li {
   padding: 1rem 0;
+}
+@media (min-width: 576px) {
+  html body nav ul li {
+    padding: 0.6rem 0;
+  }
 }
 @media (min-width: 992px) {
   html body nav ul li {
@@ -78,6 +131,11 @@ html body nav ul li a:hover {
 }
 html body nav ul li a.underlined {
   text-decoration: underline;
+}
+@media (min-width: 576px) {
+  html body nav ul li a {
+    font-size: 0.9rem;
+  }
 }
 @media (min-width: 992px) {
   html body nav ul li a {
@@ -232,6 +290,21 @@ html body main figure figcaption {
   line-height: 2rem;
   word-wrap: break-word;
 }
+html body main .divider {
+  height: 1px;
+  margin: 90px auto 10px auto;
+  position: relative;
+}
+html body main .divider:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgb(48, 49, 51), transparent);
+}
 html body #back-to-top-button {
   align-items: center;
   background-color: rgb(183, 117, 235);
@@ -239,7 +312,7 @@ html body #back-to-top-button {
   border-radius: 50%;
   bottom: 20px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
   display: none;
   font-size: 20px;
@@ -298,6 +371,7 @@ html body .veil {
 }
 html body footer {
   background-color: #000;
+  margin-top: 20px;
   padding: 0.5rem;
   text-align: center;
 }

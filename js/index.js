@@ -1,5 +1,5 @@
 
-// Get the button element
+// Get the scroll to top button element
 const backToTopBtn = document.getElementById("back-to-top-button");
 
 
@@ -14,9 +14,24 @@ window.onscroll = function() {
 
 
 // Scroll to the top when the button is clicked
-function scrollToTop() {
+backToTopBtn.addEventListener('click', function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-}
+});
+
+
+
+// Mobile hamburger menu
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const nav = document.querySelector('nav ul');
+
+hamburgerMenu.addEventListener('click', function () {
+    nav.classList.toggle('show');
+});
+
+// Close the menu when a menu item is clicked
+nav.addEventListener('click', function () {
+    nav.classList.remove('show');
+});
 
 
 
