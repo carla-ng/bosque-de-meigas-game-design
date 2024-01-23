@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="https://github.com/carla-ng/bosque-de-meigas-game-design/blob/main/images/conceptArt_juego02.jpg" alt="Bosque de Meigas Concept Art">
+</p>
+
+<br>
+
 # Bosque de Meigas Game Design
 Bosque de Meigas game design.
 Available in SPANISH ONLY.
@@ -14,10 +20,11 @@ Available in SPANISH ONLY.
 ## :hammer_and_pick: Web Page Built With
 * HTML
 * SCSS
+* JavaScript
 
 <br>
 
-## :globe_with_meridians: Demo
+## :globe_with_meridians: Presentation
 [https://carla-ng.github.io/bosque-de-meigas-game-design/](https://carla-ng.github.io/bosque-de-meigas-game-design/)
 
 <br>
