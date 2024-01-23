@@ -24,7 +24,7 @@ Available in SPANISH ONLY.
 
 <br>
 
-## :globe_with_meridians: Demo
+## :globe_with_meridians: Presentation
 [https://carla-ng.github.io/bosque-de-meigas-game-design/](https://carla-ng.github.io/bosque-de-meigas-game-design/)
 
 <br>
